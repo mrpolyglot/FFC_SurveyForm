@@ -1,0 +1,49 @@
+#main-content{
+  background: url(https://i.pinimg.com/originals/ba/14/46/ba1446a25001cafa952de5f8abc771aa.jpg);
+  background-size: 100%;
+  
+}
+
+.header-color{
+  background-image: linear-gradient(45deg, orange, yellow);
+  padding: 5px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+.input-group{
+  margin: 0 auto 1.5rem auto;
+  padding: 2px;
+}
+#survey-form{
+  background-color: #CCCCCC;
+  margin: 100px;
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+.dropdown-group{
+   display: inline-block;
+   margin-left: 1rem;
+  
+}
+#description{
+ font-size: 1.25rem;
+}
+.bullet-hide{
+  list-style: none;
+ 
+}
+#comments{
+  min-height:75px;
+  width: 75%;
+  padding: 1rem;
+}
+#submit{
+  display: block;
+  width: 25%;
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: yellow;
+  cursor: pointer;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Second Project - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title> Survey Form </title>
+  </head>
+  <body>
+    <div id="main-content">
+    <header>
+     <div class="header-color">
+      <h1 id="title">Student's Strand Survey</h1>
+       <p id="description">We deeply appreciate your voluntary effort and honesty in filling up this survey.
+      </header>
+      <form id=survey-form>
+        
+      <!--input name -->
+        <div class="input-group">
+        <label id="name-label" for="name">Name:</label>
+        <input
+               type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <hr>
+        <!--input email -->
+        <div class="input-group">
+        <label id="email-label" for="name">Email:</label>
+        <input
+               type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <hr>
+         <!--input number -->
+        <div class="input-group">
+        <label id="number-label" for="number">Grade Level:</label>
+        <input
+               type="number" name="number" id="number" placeholder="Enter your grade level" required min="1" max="12">
+        </div>
+        <hr>
+        <!-- dropdown selection-->
+        <div class="input-group">
+          <p> What strand are you currently belong? </p>
+          <select id="dropdown" name="strand" class="dropdown-group"> 
+          <option disabled selected value=""> Select current strand:
+            </option>
+            <option value="STEM">STEM</option>
+            <option value="ABM">ABM</option>
+            <option value="HUMMS">HUMMS</option>
+            <option value="GAS">GAS</option>
+            <option value="Tech-Voc">Tech-Voc</option>
+            <option value="Others">Others</option>
+            
+          </select>
+        </div>
+        <hr>
+        <!-- RADIO BOXES -->
+        <div class="input-group">
+          <p>Are you currently satisfied with your current strand?</p>
+          <!-- YES -->
+         
+          <label>
+            <input name="scale" value="yes" type="radio" class=dropdown-group checked> Yes 
+          </label>
+          
+          <!-- NO -->
+          <label>
+            <input name="scale" value="no" type="radio" class=dropdown-group> No
+          </label>
+          
+          <!-- Maybe -->
+          <label>
+            <input name="scale" value="maybe" type="radio" class=dropdown-group> Maybe
+          </label>
+          
+          <!-- Undecided -->
+          <label>
+            <input name="scale" value="undecided" type="radio" class=dropdown-group> Undecided
+          </label>
+        </div>
+        <hr>
+                <!-- CHECK BOXES -->
+        <div class="input-group">
+          <p>What influence you from choosing that strand?</p>
+          <p> Check all that apply </p>
+          
+          <label>
+            
+            Family
+            <input type="checkbox" name="influencer " value="family"></label>
+                                                                   
+            <label>Friends
+            <input type="checkbox" name="influencer" value="friends"></label>
+            
+            <label>Salary
+            <input type="checkbox" name="influencer" value="salary"></label>
+                                                                   <label>Interest
+            <input type="checkbox" name="influencer"  value="interest"></label>
+            
+               <label>Others
+            <input type="checkbox" name="influencer" value="others"></label>
+                                                                   </ul>
+        </div>
+             
+                     <hr>                                              <!--  Comments -->
+      <div class="input-group"> <p>Feedbacks or comments:</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="If you have any feedbacks or problems while filling this form please enter here." ></textarea>
+                
+              
+        </div>
+        
+        <div class="input-group">
+                                <button type="submit" id="submit" class="submit-button">Submit</button>
+                                                        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
